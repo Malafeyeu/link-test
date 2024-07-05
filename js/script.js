@@ -85,11 +85,8 @@ $(document).ready(function() {
   checkbox.addEventListener('click', () => checkbox.classList.toggle('checked'));
 // Form
   $('.form__btn-submit').on('click', () => {
-    const form = $('.form');
     const name = $('#name').val();
     const phone = $('#phone-number').val();
-    const isChecked = $(".policy-checkbox").hasClass("active");
-    const divError = $("<div>");
   
     if (name.trim() == "") {
       $(".errorName").text("Введите Имя");
