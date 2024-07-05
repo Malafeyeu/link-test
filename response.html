@@ -3,9 +3,421 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Success</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mmenu-js/9.3.0/mmenu.min.css" integrity="sha512-nNatP1G6CEh43irXY/GN4cDcLRX/R0jAYAV/ulFZcotSXcuIQE5Do4TuDOYNAD2SCIpmIbaYSllyjTysSCkpEw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="./assets/icon.png" type="image/x-icon" size="16x16">
+  <!-- <link rel="stylesheet" href="./scss/style.scss"> -->
+   <link rel="stylesheet" href="./scss/style.css">
+  <title>PATRIOT</title>
 </head>
-<body>
-  HI
+<body class="root">
+  <div id="page">
+<!-- HEADER -->
+    <header class="site-header">
+      <div class="site-header-container">
+        <div class="site-header__block-w-logo">
+          <div class="block-w-logo__box-logo">
+            <a href="#">
+              <img src="./assets/logo.png" alt="logo">
+            </a>
+          </div>
+
+          <nav class="block-w-logo__navbar">
+            <ul class="navbar__list">
+              <li class="list__item">
+                <a href="#">
+                  Услуги
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="#">
+                  Продукция
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="#">
+                  Проекты
+                </a>
+              </li>
+              <li class="list__item">
+                <a href="#">
+                  Компания
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="site-header__block-info">
+          <div class="block-info__location">
+            <img src="./assets/location_mark.png" alt="location image">
+          </div>
+          <div class="block-info__phone">
+            <img src="./assets/call_mark.png" alt="call image">
+          </div>
+          <ul class="site-header__burger-menu">
+            <li class="hamburger"></li>
+            <li class="hamburger"></li>
+            <li class="hamburger"></li>
+          </ul>
+        </div>
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="#">
+                Услуги
+              </a>
+              <ul class="Vertical">
+                <li>
+                  <a href="#">
+                    Управление активами и инвестиции
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Автоматизация бизнеса
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Финансовый аудит
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Юридическая практика
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Лизинг
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    Информационная безопасность
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                Продукция
+              </a>
+              <ul class="Vertical">
+                <li>
+                  <a href="#">
+                    Успей
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="Vertical">
+                Проекты
+              </a>
+              <ul class="Vertical">
+                <li>
+                  <a href="#">
+                    Узнай больше
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="Vertical">
+                Компания
+              </a>
+              <ul class="Vertical">
+                <li>
+                  <a href="#">
+                    О нас
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="Vertical">
+                Пресс-центр
+              </a>
+            </li>
+            <li>
+              <a href="#" class="Vertical">
+                Контакты
+              </a>
+            </li>
+            <div class="menu-location">
+              <img src="./assets/location_mark.png" alt="location image">
+            </div>
+            <div class="menu-call">
+              <img src="./assets/call_mark.png" alt="call image">
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<!-- MAIN -->
+    <div id="content">
+      <main class="wrapper">
+  <!-- BRANDING -->
+        <section class="branding">
+          <img class="image-bg" src="./assets/fake_img_bg.png" alt="fake-image">
+          <div class="branding-container">
+            <div class="branding__block-w-info">
+              <div class="branding__carousel owl-carousel">
+                <div class="block-w-info__box-description">
+                  <h1 class="box-description__title">
+                    Patriot —  это ключ к успешному бизнесу по всей территории РФ
+                  </h1>
+  
+                  <p class="box-description__info">
+                    Роскошный, быстрый, практичный автомобиль на выгодных условиях 
+                    лизинга. Станьте ближе к мечте и сократите налог на имущество 
+                    в три раза.
+                  </p>
+                </div>
+
+                <div class="block-w-info__box-description">
+                  <h1 class="box-description__title">
+                    Patriot —  это ключ к успешному бизнесу по всей территории РФ
+                  </h1>
+  
+                  <p class="box-description__info">
+                    Роскошный, быстрый, практичный автомобиль на выгодных условиях 
+                    лизинга. Станьте ближе к мечте и сократите налог на имущество 
+                    в три раза.
+                  </p>
+                </div>
+
+                <div class="block-w-info__box-description">
+                  <h1 class="box-description__title">
+                    Patriot —  это ключ к успешному бизнесу по всей территории РФ
+                  </h1>
+  
+                  <p class="box-description__info">
+                    Роскошный, быстрый, практичный автомобиль на выгодных условиях 
+                    лизинга. Станьте ближе к мечте и сократите налог на имущество 
+                    в три раза.
+                  </p>
+                </div>
+              </div>
+              <div class="branding__navs"></div>
+            </div>
+
+            <div>
+              <span>Спасибо что обратились!</span>
+            </div>
+            <div class="branding__dots dot"></div>
+          </div>
+        </section>
+  <!-- TARIFF -->
+        <section class="tariff">
+          <div class="tariff-container">
+            <div class="tariff__head-block">
+              <h2 class="head-block__title">
+                Тарифы
+              </h2>
+              <div class="tariff__navs"></div>
+            </div>
+            <div class="tariff__carousel owl-carousel">
+              <div class="carousel__card">
+                <div class="card__header">
+                  <img class="header__img" src="./assets/fack-img-bg-card.png" alt="fake image card">
+                  <div class="header__box-tags">
+                    <div class="tag-item">
+                      Акция
+                    </div>
+                    <div class="tag-item">
+                      новинка
+                    </div>
+                    <div class="tag-item">
+                      хит
+                    </div>
+                  </div>
+                  <h4 class="header__title">
+                    Лайт
+                  </h4>
+                </div>
+                <div class="card__main">
+                  <div class="main__box">
+                    <span class="box-left">
+                      Visa, Master Card, МИР
+                    </span>
+                    <span class="box-right">
+                      3,7%
+                    </span>
+                  </div>
+                  <div class="main__box">
+                    <span class="box-left">
+                      Apple Pay, Android Pay
+                    </span>
+                    <span class="box-right">
+                      3,7%
+                    </span>
+                  </div>
+                  <div class="main__box">
+                    <span class="box-left">
+                      Электронные кошельки
+                    </span>
+                    <span class="box-right">
+                      3,7%
+                    </span>
+                  </div>
+                  <div class="main__box">
+                    <span class="box-left">
+                      Оборот
+                    </span>
+                    <span class="box-right">
+                      от 0 до 200 т.р.
+                    </span>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <h4 class="footer__price">
+                    120 000 ₽
+                  </h4>
+                  <button class="footer__btn-submit">
+                    Оплатить
+                  </button>
+                </div>
+              </div>
+
+              <div class="carousel__card">
+                <div class="card__header">
+                  <img class="header__img" src="./assets/fack-img-bg-card.png" alt="fake image card">
+                  <div class="header__box-tags">
+                    <div class="tag-item">
+                      Акция
+                    </div>
+                    <div class="tag-item">
+                      хит
+                    </div>
+                  </div>
+                  <h4 class="header__title">
+                    Лайт
+                  </h4>
+                </div>
+                <div class="card__main">
+                  <div class="main__box">
+                    <span class="box-left">
+                      Visa, Master Card, МИР
+                    </span>
+                    <span class="box-right">
+                      3,7%
+                    </span>
+                  </div>
+                  <div class="main__box">
+                    <span class="box-left">
+                      Apple Pay, Android Pay
+                    </span>
+                    <span class="box-right">
+                      3,7%
+                    </span>
+                  </div>
+                  <div class="main__box">
+                    <span class="box-left">
+                      Электронные кошельки
+                    </span>
+                    <span class="box-right">
+                      3,7%
+                    </span>
+                  </div>
+                  <div class="main__box">
+                    <span class="box-left">
+                      Оборот
+                    </span>
+                    <span class="box-right">
+                      от 0 до 200 т.р.
+                    </span>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <h4 class="footer__price">
+                    <span class="discount">
+                      120 000 ₽
+                    </span>
+                    <span class="price">
+                      125 500 ₽
+                    </span>
+                  </h4>
+                  <button class="footer__btn-submit">
+                    Оплатить
+                  </button>
+                </div>
+              </div>
+
+              <div class="carousel__card">
+                <div class="card__header">
+                  <img class="header__img" src="./assets/fack-img-bg-card.png" alt="fake image card">
+                  <div class="header__box-tags">
+                    <div class="tag-item">
+                      Акция
+                    </div>
+                    <div class="tag-item">
+                      новинка
+                    </div>
+                    <div class="tag-item">
+                      хит
+                    </div>
+                  </div>
+                  <h4 class="header__title">
+                    Лайт
+                  </h4>
+                </div>
+                <div class="card__main">
+                  <div class="main__box">
+                    <span class="box-left">
+                      Visa, Master Card, МИР
+                    </span>
+                    <span class="box-right">
+                      3,7%
+                    </span>
+                  </div>
+                  <div class="main__box">
+                    <span class="box-left">
+                      Apple Pay, Android Pay
+                    </span>
+                    <span class="box-right">
+                      3,7%
+                    </span>
+                  </div>
+                  <div class="main__box">
+                    <span class="box-left">
+                      Электронные кошельки
+                    </span>
+                    <span class="box-right">
+                      3,7%
+                    </span>
+                  </div>
+                  <div class="main__box">
+                    <span class="box-left">
+                      Оборот
+                    </span>
+                    <span class="box-right">
+                      от 0 до 200 т.р.
+                    </span>
+                  </div>
+                </div>
+                <div class="card__footer">
+                  <h4 class="footer__price">
+                    120 000 ₽
+                  </h4>
+                  <button class="footer__btn-submit">
+                    Оплатить
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="tariff__dots dot"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mmenu-js/9.3.0/mmenu.js" integrity="sha512-D1qgHT+xXRgN9gLLLYHbQ/c8wkrADqfXg1kr1dRbP9nOtNzIKKNDU+hmFqR1fSbsU1YFBkw6TbvfZo+SyI0K6w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="./js/script.js"></script>
 </body>
 </html>

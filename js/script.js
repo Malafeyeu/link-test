@@ -75,10 +75,45 @@ $(document).ready(function() {
 
   displayClientInfo(ClientConfig);
 
+  // Получаем текущий URL
+  const currentUrl = window.location.href;
+  const responseRegex = /\/response(?:\.html)?/;
+
+  if (!responseRegex.test(currentUrl)) {
 // Checkbox формы
   const checkbox = document.querySelector('.form__policy');
   checkbox.addEventListener('click', () => checkbox.classList.toggle('checked'));
-
+// Form
+  $('.form__btn-submit').on('click', () => {
+    const form = $('.form');
+    const name = $('#name').val();
+    const phone = $('#phone').val();
+    const isChecked = $(".policy-checkbox").hasClass("active");
+    const divError = $("<div>");
+  
+    if (name.trim() == "") {
+      $(".errorName").text("Имя");
+      $("#name").addClass("error");
+      return false;
+    } else {
+      $(".errorName").text("");
+      $("#name").removeClass("error");
+    }
+  
+    if (phone.trim() == "" || phone.length < 10) {
+      $(".errorPhone").text("Введите номер телефона");
+      $("#phone").addClass("error");
+      return false;
+    } else {
+      $(".errorPhone").text("");
+      $("#phone").removeClass("error");
+    }
+    
+    if (isChecked) {
+    
+    }
+  })
+}
 // Carousel
   const carouselBranding = $('.branding__carousel');
   const carouselTariff = $('.tariff__carousel');
@@ -187,33 +222,3 @@ $(document).ready(function() {
   };
   addCustomBtn();
 });
-
-$('.form__btn-submit').on('click', () => {
-  const form = $('.form');
-  const name = $('#name').val();
-  const phone = $('#phone').val();
-  const isChecked = $(".policy-checkbox").hasClass("active");
-  const divError = $("<div>");
-
-  if (name.trim() == "") {
-    $(".errorName").text("Имя");
-    $("#name").addClass("error");
-    return false;
-  } else {
-    $(".errorName").text("");
-    $("#name").removeClass("error");
-  }
-
-  if (phone.trim() == "" || phone.length < 10) {
-    $(".errorPhone").text("Введите номер телефона");
-    $("#phone").addClass("error");
-    return false;
-  } else {
-    $(".errorPhone").text("");
-    $("#phone").removeClass("error");
-  }
-  
-  if (isChecked) {
-  
-  }
-})
