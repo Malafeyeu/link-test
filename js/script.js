@@ -87,30 +87,26 @@ $(document).ready(function() {
   $('.form__btn-submit').on('click', () => {
     const form = $('.form');
     const name = $('#name').val();
-    const phone = $('#phone').val();
+    const phone = $('#phone-number').val();
     const isChecked = $(".policy-checkbox").hasClass("active");
     const divError = $("<div>");
   
     if (name.trim() == "") {
-      $(".errorName").text("Имя");
+      $(".errorName").text("Введите Имя");
       $("#name").addClass("error");
       return false;
     } else {
       $(".errorName").text("");
-      $("#name").removeClass("error");
+      $("#name").removeClass("error");  
     }
   
     if (phone.trim() == "" || phone.length < 10) {
       $(".errorPhone").text("Введите номер телефона");
-      $("#phone").addClass("error");
+      $("#phone-number").addClass("error");
       return false;
     } else {
       $(".errorPhone").text("");
-      $("#phone").removeClass("error");
-    }
-    
-    if (isChecked) {
-    
+      $("#phone-number").removeClass("error");
     }
   })
 }

@@ -681,6 +681,12 @@ header, nav, section {
   flex-direction: column;
   gap: 5px;
 }
+.branding .branding-container .form .form__header .form__fields .form__label #errorMessage {
+  color: #a22020;
+}
+.branding .branding-container .form .form__header .form__fields .form__label .error {
+  border: 2px solid #a22020 !important;
+}
 .branding .branding-container .form .form__header .form__fields .form__label .form__input {
   width: calc(250px + 157 * (100vw - 320px) / 1600);
   border: 1px solid #E5E5E5;

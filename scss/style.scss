@@ -687,6 +687,12 @@ header, nav, section {
             flex-direction: column;
             
             gap: 5px;
+            #errorMessage {
+              color: #a22020;
+            }
+            .error {
+              border: 2px solid #a22020 !important;
+            }
             .form__input {
               @include adaptive-value('width', 407, 250, 0);
               border: 1px solid $grey-border;
